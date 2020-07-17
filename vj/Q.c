@@ -2,8 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-int main()
-{
+int main() {
     char str[100];
     int i;
     while (gets(str)) {
@@ -12,7 +11,7 @@ int main()
                 str[0] = str[0] - 32;
             }
             if (str[i] == ' ') {
-                str[i+1] -= 32;
+                str[i + 1] -= 32;
             }
             printf("%c", str[i]);
         }

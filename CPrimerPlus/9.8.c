@@ -2,8 +2,7 @@
 
 double power(double num, int x);
 
-int main()
-{
+int main() {
     double num;
     int x;
     scanf("%lf %d", &num, &x);
@@ -18,15 +17,12 @@ double power(double num, int x) {
         if (x == 0) {
             printf("0 power 0 undefine, so return 1\n");
             return 1;
+        } else {
+            return 0;
         }
-        else {
-            return 0; 
-        }
-    }
-    else if (x == 0) {
+    } else if (x == 0) {
         return 1;
-    }
-    else {
+    } else {
         int i;
         double sum = 1;
         if (x < 0) {
@@ -38,8 +34,7 @@ double power(double num, int x) {
         }
         if (x > 0 && flag == 0) {
             return sum;
-        }
-        else {
+        } else {
             sum = 1 / sum;
             return sum;
         }

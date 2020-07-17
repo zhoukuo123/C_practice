@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
+int main() {
     FILE *fp = fopen("test.txt", "w+");
     int c;
     if (fp == NULL) {

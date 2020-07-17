@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
+int main() {
     FILE *fp1, *fp2;
     fp1 = fopen("test.txt", "r");
     if (fp1 == NULL) {

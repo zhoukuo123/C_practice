@@ -2,8 +2,7 @@
 
 double ave(double x, double y);
 
-int main()
-{
+int main() {
     double x = 3, y = 5;
     printf("%lf\n", ave(x, y));
     return 0;

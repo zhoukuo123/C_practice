@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     double cup_number;
     scanf("%lf", &cup_number);
     printf("%lf\n", cup_number / 2);

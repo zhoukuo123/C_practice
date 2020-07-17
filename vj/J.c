@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int n;
     scanf("%d", &n);
     int i;
@@ -12,14 +11,14 @@ int main()
         scanf("%d %d", &getoff, &geton);
         sum = sum + geton - getoff;
         if (i == 0) {
-            max = sum; 
+            max = sum;
         }
         if (max < sum) {
             max = sum;
         }
     }
     printf("%d\n", max);
-    
+
     return 0;
 }
 

@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int year = 0;
     int dollar_sum = 100;
     while (dollar_sum > 0) {

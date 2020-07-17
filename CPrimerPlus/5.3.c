@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int total_day, week, day;
     scanf("%d", &total_day);
     week = total_day / 7;

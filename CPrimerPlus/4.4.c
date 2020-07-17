@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     float height_inch;
     scanf("%f", &height_inch);
     char name[10];

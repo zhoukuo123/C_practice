@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main()
-{
+int main() {
     char s[500001];
     scanf("%s", s);
     int i, j, k, m, n;
@@ -13,19 +12,19 @@ int main()
             break;
         }
     }
-    for (j = i+1; j < strlen(s); j++) {
+    for (j = i + 1; j < strlen(s); j++) {
         if (s[j] == ':') {
             cnt++;
             break;
         }
     }
-    for (k = strlen(s)-1; k > j; k-- ) {
+    for (k = strlen(s) - 1; k > j; k--) {
         if (s[k] == ']') {
             cnt++;
             break;
         }
     }
-    for (m = k-1; m > j; m--) {
+    for (m = k - 1; m > j; m--) {
         if (s[m] == ':') {
             cnt++;
             break;
@@ -33,8 +32,7 @@ int main()
     }
     if (cnt < 4) {
         printf("-1\n");
-    }
-    else {
+    } else {
         for (n = j; n < m; n++) {
             if (s[n] == '|') {
                 cnt++;

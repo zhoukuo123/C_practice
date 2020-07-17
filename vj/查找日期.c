@@ -3,24 +3,24 @@
 
 #define MAXS 80
 
-int getindex( char *s );
+int getindex(char *s);
 
-int main()
-{
+int main() {
     int n;
     char s[MAXS];
 
     scanf("%s", s);
     n = getindex(s);
-    if ( n==-1 ) printf("wrong input!\n");
+    if (n == -1) printf("wrong input!\n");
     else printf("%d\n", n);
 
     return 0;
 }
+
 int getindex(char *s) {
     char *xingqi[7] = {
-        "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", 
-        "Friday", "Saturday"
+            "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday",
+            "Friday", "Saturday"
     };
     int i;
     int flag = 0;

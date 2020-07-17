@@ -1,16 +1,14 @@
 #include <stdio.h>
 
-double calc_pow( double x, int n ) {
-    if(n>=2) {
-        return x*calc_pow(x,n-1);
-    }
-    else {
+double calc_pow(double x, int n) {
+    if (n >= 2) {
+        return x * calc_pow(x, n - 1);
+    } else {
         return x;
     }
 }
 
-int main()
-{
+int main() {
     double x;
     int n;
 

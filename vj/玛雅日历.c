@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <string.h>
-int main()
-{
-    char month[19][10] = {"pop", "no", "zip", "zotz", 
-        "tzec","xul",
-        "yoxkin","mol", "chen", "yax","zac",
-         "ceh","mac","kankin","muan","pax",
-        "koyab","cumhu","uayet"};
-    char month1[20][10] = {"imix","ik","akbal","kan","chicchan","cimi",
-    "manik","lamat","muluk", "ok", "chuen",
-     "eb","ben","ix","mem","cib","caban","eznab",
-    "canac","ahau"};    
+
+int main() {
+    char month[19][10] = {"pop", "no", "zip", "zotz",
+                          "tzec", "xul",
+                          "yoxkin", "mol", "chen", "yax", "zac",
+                          "ceh", "mac", "kankin", "muan", "pax",
+                          "koyab", "cumhu", "uayet"};
+    char month1[20][10] = {"imix", "ik", "akbal", "kan", "chicchan", "cimi",
+                           "manik", "lamat", "muluk", "ok", "chuen",
+                           "eb", "ben", "ix", "mem", "cib", "caban", "eznab",
+                           "canac", "ahau"};
     int n;
     scanf("%d", &n);
     printf("%d\n", n);
@@ -29,7 +29,7 @@ int main()
         printf("%d %s %d\n",
                sum % 13 + 1,
                month1[sum % 20],
-               sum / 260 );
+               sum / 260);
     }
     return 0;
 }

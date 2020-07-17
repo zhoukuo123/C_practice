@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void chline(char ch[][5], int i , int j);
-int main()
-{
+void chline(char ch[][5], int i, int j);
+
+int main() {
     char ch[5][5];
     char ch1 = 'a';
     int i, j;

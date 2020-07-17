@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int n;
     int even_num = 0, ave_even = 0, odd_num = 0, ave_odd = 0;
     int even_sum = 0, odd_sum = 0;
@@ -13,8 +12,7 @@ int main()
         if (n % 2 == 0) {
             even_num++;
             even_sum += n;
-        }
-        else {
+        } else {
             odd_num++;
             odd_sum += n;
         }

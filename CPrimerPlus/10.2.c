@@ -20,8 +20,7 @@ void copy_ptrs(double *target3, double *source, double *p) {
     }
 }
 
-int main()
-{
+int main() {
     double source[5] = {1.1, 2.2, 3.3, 4.4, 5.5};
     double target1[5];
     double target2[5];

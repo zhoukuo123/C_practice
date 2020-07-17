@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     float megabyte, megabit, second;
     scanf("%f %f", &megabit, &megabyte);
     second = megabyte * 8 / megabit;

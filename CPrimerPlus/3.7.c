@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int height;
     scanf("%d", &height);
     double centimeter_height = 2.54 * height;

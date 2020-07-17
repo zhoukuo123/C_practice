@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int n, k;
     scanf("%d %d", &n, &k);
     char password[101] = {0};
@@ -11,7 +10,7 @@ int main()
     while (cnt != n) {
         for (i = 'a'; i <= 'z'; i++) {
             password[j++] = i;
-            if (i == 'a' + k-1) {
+            if (i == 'a' + k - 1) {
                 i = 'a' - 1;
             }
             cnt++;
@@ -21,7 +20,7 @@ int main()
         }
     }
     printf("%s\n", password);
-    
+
     return 0;
 }
 

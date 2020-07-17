@@ -1,7 +1,8 @@
 #include <stdio.h>
+
 #define X 60
-int main()
-{
+
+int main() {
     int time;
     scanf("%d", &time);
     while (time > 0) {

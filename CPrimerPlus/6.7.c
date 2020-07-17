@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main()
-{
+int main() {
     char word[10];
     scanf("%s", word);
     int i = strlen(word);

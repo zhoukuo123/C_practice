@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int start_friend = 5;
     int week = 1;
     while (start_friend <= 150) {
@@ -10,7 +9,7 @@ int main()
         week++;
         printf("%d\n", start_friend);
     }
-    
+
     return 0;
 }
 

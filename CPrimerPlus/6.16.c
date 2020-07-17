@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int Daphne_dollar = 100, Deirdre_dollar = 100;
     double Daphne_yearsum = 100, Deirdre_sum = 100;
     double Daphne_sum = 100;

@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     double arr[5] = {1, 2, 3, 4, 5};
     int i;
     double max = arr[0];

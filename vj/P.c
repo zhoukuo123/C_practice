@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main()
-{
+int main() {
     char str[50];
     scanf("%s", str);
     int cnt = strlen(str);
@@ -10,7 +9,7 @@ int main()
     int flag = 0;
     int flag1 = 0;
     for (i = 0; i < cnt; i++) {
-        for (j = i+1; j < cnt; j++) {
+        for (j = i + 1; j < cnt; j++) {
             if (str[i] != str[j]) {
                 flag1 = 1;
             }
@@ -21,28 +20,25 @@ int main()
         return 0;
     }
     if (cnt % 2 == 1) {
-        for (i = 0, j = cnt-1; i < cnt/2; i++,j--) {
-            if (str[i] != str[j]) {
-                flag = 1;
-            }   
-        } 
-        if (flag == 0) {
-            printf("%d\n", cnt-1);
-        }
-        else {
-            printf("%d\n", cnt);
-        }
-    }
-    else {
-        for (i = 0, j = cnt-1; i < cnt/2; i++,j--) {
+        for (i = 0, j = cnt - 1; i < cnt / 2; i++, j--) {
             if (str[i] != str[j]) {
                 flag = 1;
             }
         }
         if (flag == 0) {
-            printf("%d\n", cnt-1);
+            printf("%d\n", cnt - 1);
+        } else {
+            printf("%d\n", cnt);
         }
-        else {
+    } else {
+        for (i = 0, j = cnt - 1; i < cnt / 2; i++, j--) {
+            if (str[i] != str[j]) {
+                flag = 1;
+            }
+        }
+        if (flag == 0) {
+            printf("%d\n", cnt - 1);
+        } else {
             printf("%d\n", cnt);
         }
     }

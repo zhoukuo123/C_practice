@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int n, k;
     scanf("%d %d", &n, &k);
     int a[n];
@@ -13,17 +12,15 @@ int main()
     for (i = 0; i < n; i++) {
         if (a[i] <= k) {
             cnt++;
-        }
-        else {
+        } else {
             break;
         }
     }
     if (cnt != n) {
-        for (i = n-1; i >= 0; i--) {
+        for (i = n - 1; i >= 0; i--) {
             if (a[i] <= k) {
                 cnt++;
-            }
-            else {
+            } else {
                 break;
             }
         }

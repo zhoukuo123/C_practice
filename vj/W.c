@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main()
-{
+int main() {
     int n;
     int m;
     scanf("%d %d", &n, &m);
@@ -22,7 +21,7 @@ int main()
         for (i = 0; i < n; i++) {
             if (max < a[i][j]) {
                 max = a[i][j];
-            } 
+            }
         }
         for (i = 0; i < n; i++) {
             if (a[i][j] == max) {

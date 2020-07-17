@@ -5,9 +5,9 @@
 typedef struct student {
     int num;
     int score;
-}stu;
-int main()
-{
+} stu;
+
+int main() {
     int n;
     scanf("%d", &n);
     stu stuarray[n];

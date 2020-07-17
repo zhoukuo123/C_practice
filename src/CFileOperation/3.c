@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
+int main() {
     // "w+"模式: 先写入后读出
     FILE *fp = fopen("test.txt", "w+");
     if (fp == NULL) {
@@ -13,7 +12,7 @@ int main()
     printf("请输入3个字符串.\n");
     int i;
     for (i = 0; i < 3; i++) {
-        printf("字符串%d:", i+1);
+        printf("字符串%d:", i + 1);
         fgets(str, 30, stdin);
         // scanf("%s", str);
         fputs(str, fp);
@@ -21,7 +20,7 @@ int main()
     rewind(fp);
     while (fgets(str, 30, fp) != NULL) {
         // 把字符串输出到屏幕
-        fputs(str, stdout); 
+        fputs(str, stdout);
     }
     fclose(fp);
     return 0;

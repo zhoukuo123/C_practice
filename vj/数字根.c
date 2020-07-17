@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-int main()
-{
+
+int main() {
     char num[10000];
     while (scanf("%s", num) && strcmp(num, "0") != 0) {
         int j = 0, k;

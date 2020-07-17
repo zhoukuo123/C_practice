@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int n;
     scanf("%d", &n);
     int a[n];
@@ -9,17 +8,17 @@ int main()
     for (i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
-    for (i = 0; i < n-1; i++) {
-        for (j = 0; j < n-i-1; j++) {
+    for (i = 0; i < n - 1; i++) {
+        for (j = 0; j < n - i - 1; j++) {
             int t;
-            if (a[j] > a[j+1]) {
-                t = a[j+1];
-                a[j+1] = a[j];
+            if (a[j] > a[j + 1]) {
+                t = a[j + 1];
+                a[j + 1] = a[j];
                 a[j] = t;
             }
         }
     }
-        printf("%d\n", a[n/2]);
+    printf("%d\n", a[n / 2]);
     return 0;
 }
 

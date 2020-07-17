@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int cnt = 0;
     char ch;
     while (1) {
@@ -10,7 +9,7 @@ int main()
             break;
         }
         printf("%c %d ", ch, ch);
-        cnt++; 
+        cnt++;
         if (cnt % 8 == 0) {
             printf("\n");
         }

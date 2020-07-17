@@ -2,8 +2,7 @@
 
 void print(char ch, int i, int j);
 
-int main()
-{
+int main() {
     char ch = 'a';
     int i = 3, j = 5;
     print(ch, i, j);

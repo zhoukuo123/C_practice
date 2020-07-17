@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int n;
     scanf("%d", &n);
     int v[n];
@@ -12,9 +11,8 @@ int main()
     }
     if (n == 2) {
         printf("0\n");
-    }
-    else {
-        int min = v[0], max = v[n-1];
+    } else {
+        int min = v[0], max = v[n - 1];
         for (i = 0; i < n; i++) {
             if (min > v[i]) {
                 min = v[i];
@@ -28,7 +26,7 @@ int main()
                 cnt++;
             }
         }
-        printf("%d\n", cnt); 
+        printf("%d\n", cnt);
     }
 
     return 0;

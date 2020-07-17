@@ -2,11 +2,10 @@
 
 void larger_of(double *x, double *y);
 
-int main()
-{
+int main() {
     double a, b;
     double *x = &a, *y = &b;
-    *x = 1, *y = 2; 
+    *x = 1, *y = 2;
     larger_of(x, y);
     return 0;
 }

@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     char ch;
     int flag = 0;
     int cnt = 0;
@@ -9,8 +8,7 @@ int main()
         scanf("%c", &ch);
         if (ch == '#') {
             break;
-        }
-        else {
+        } else {
             if (ch == 'e') {
                 flag = 1;
             }
@@ -23,7 +21,7 @@ int main()
         }
     }
     printf("%d\n", cnt);
-    
+
     return 0;
 }
 

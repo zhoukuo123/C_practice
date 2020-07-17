@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main()
-{
+int main() {
     char n[100000] = {0};
     scanf("%s", n);
     int cnt = 0;

@@ -1,17 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
-struct link
-{
+
+struct link {
     char name[10];
     struct link *pnext;
 };
 
-struct link* initlink()
-{
+struct link *initlink() {
     struct link *head, *current, *next;
-    head = (struct link*)malloc(sizeof(struct link));
-    if (!head)
-    {
+    head = (struct link *) malloc(sizeof(struct link));
+    if (!head) {
         printf("初始化失败\n");
         exit(0);
     }
@@ -21,12 +19,10 @@ struct link* initlink()
     char x[10];
     scanf("%s", x);
     current = head;
-    while (*x == 'y')
-    {
+    while (*x == 'y') {
         printf("请输入名字:\n");
-        next = (struct link*)malloc(sizeof(struct link));
-        if (!next)
-        {
+        next = (struct link *) malloc(sizeof(struct link));
+        if (!next) {
             printf("初始化失败\n");
             exit(0);
         }
@@ -40,12 +36,10 @@ struct link* initlink()
     return head;
 }
 
-void display(struct link *p)
-{
+void display(struct link *p) {
     struct link *current;
     current = p;
-    while (current->pnext != NULL)
-    {
+    while (current->pnext != NULL) {
         printf("%s\n", current->name);
         current = current->pnext;
     }
@@ -53,8 +47,7 @@ void display(struct link *p)
 }
 
 
-int main(void)
-{
+int main(void) {
     struct link *p;
     p = initlink();
     display(p);

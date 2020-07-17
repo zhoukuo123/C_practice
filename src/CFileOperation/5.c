@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 #define N 10
 
 typedef struct Student {
@@ -7,13 +8,13 @@ typedef struct Student {
     char no[15];
     int sc[3];
     double ave;
-}stu;
+} stu;
 
 void inputInfo(stu a[], int n);
+
 void writeInfo(stu a[], int n);
 
-int main()
-{
+int main() {
     int n;
     stu a[N];
     scanf("%d", &n);

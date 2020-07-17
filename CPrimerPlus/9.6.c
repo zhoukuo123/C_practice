@@ -2,12 +2,11 @@
 
 void fun(double *a, double *b, double *c);
 
-int main()
-{
+int main() {
     double a, b = 4, c = 1;
     scanf("%lf %lf %lf", &a, &b, &c);
     fun(&a, &b, &c);
-    printf("%lf %lf %lf\n", a, b ,c);
+    printf("%lf %lf %lf\n", a, b, c);
     return 0;
 }
 
@@ -29,13 +28,11 @@ void fun(double *a, double *b, double *c) {
     double half = *a;
     if (half < max && half > min) {
         half = *a;
-    }
-    else {
+    } else {
         half = *b;
         if (half < max && half > min) {
-            half = *b;    
-        }
-        else {
+            half = *b;
+        } else {
             half = *c;
         }
     }

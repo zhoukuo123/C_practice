@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-int main()
-{
+
+int main() {
     char miwen[200] = {0};
     int flag = 0;
     char zuihouyihang[10] = {0};
@@ -17,44 +17,33 @@ int main()
             for (i = 0; miwen[i] != '\0'; i++) {
                 if (miwen[i] == 'A') {
                     miwen[i] = 'V';
-                }
-                else if (miwen[i] == 'B') {
+                } else if (miwen[i] == 'B') {
                     miwen[i] = 'W';
-                }
-                else if (miwen[i] == 'C') {
+                } else if (miwen[i] == 'C') {
                     miwen[i] = 'X';
-                }
-                else if (miwen[i] == 'D') {
+                } else if (miwen[i] == 'D') {
                     miwen[i] = 'Y';
-                }
-                else if (miwen[i] == 'E') {
+                } else if (miwen[i] == 'E') {
                     miwen[i] = 'Z';
-                }
-                else if (miwen[i] <= 'Z' && miwen[i] >= 'F') {
+                } else if (miwen[i] <= 'Z' && miwen[i] >= 'F') {
                     miwen[i] = miwen[i] - 5;
                 }
             }
             printf("%s\n", miwen);
             scanf("%s", zuihouyihang);
-        }
-        else {
+        } else {
             for (i = 0; miwen[i] != '\0'; i++) {
                 if (miwen[i] == 'A') {
                     miwen[i] = 'V';
-                }
-                else if (miwen[i] == 'B') {
+                } else if (miwen[i] == 'B') {
                     miwen[i] = 'W';
-                }
-                else if (miwen[i] == 'C') {
+                } else if (miwen[i] == 'C') {
                     miwen[i] = 'X';
-                }
-                else if (miwen[i] == 'D') {
+                } else if (miwen[i] == 'D') {
                     miwen[i] = 'Y';
-                }
-                else if (miwen[i] == 'E') {
+                } else if (miwen[i] == 'E') {
                     miwen[i] = 'Z';
-                }
-                else if (miwen[i] >= 'F' && miwen[i] <= 'Z') {
+                } else if (miwen[i] >= 'F' && miwen[i] <= 'Z') {
                     miwen[i] = miwen[i] - 5;
                 }
             }

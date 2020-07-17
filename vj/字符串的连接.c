@@ -3,12 +3,11 @@
 
 #define MAXS 10
 
-char *str_cat( char *s, char *t );
+char *str_cat(char *s, char *t);
 
-int main()
-{
+int main() {
     char *p;
-    char str1[MAXS+MAXS] = {'\0'}, str2[MAXS] = {'\0'};
+    char str1[MAXS + MAXS] = {'\0'}, str2[MAXS] = {'\0'};
 
     scanf("%s%s", str1, str2);
     p = str_cat(str1, str2);
@@ -16,6 +15,7 @@ int main()
 
     return 0;
 }
+
 char *str_cat(char *s, char *t) {
     int i;
     while (*t != '\0') {

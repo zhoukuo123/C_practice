@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main()
-{
+int main() {
     char arr[5];
     int i;
     for (i = 0; i < 5; i++) {

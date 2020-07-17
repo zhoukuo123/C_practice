@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
+int main() {
     FILE *fp = fopen("test.txt", "w+");
     char name[10] = "张三";
     char num[10] = "2202202";

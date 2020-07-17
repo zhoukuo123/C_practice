@@ -1,8 +1,8 @@
 #include <stdio.h>
+
 #define NUM 8
 
-int main()
-{
+int main() {
     char a[NUM];
     int i;
     for (i = 0; i < NUM; i++) {

@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int n;
     int i, j;
     while (~scanf("%d", &n)) {
@@ -11,8 +10,8 @@ int main()
             a[i][i] = 1;
         }
         for (i = 2; i < n; i++) {
-            for (j = 1; j <= i-1; j++) {
-                a[i][j] = a[i-1][j-1] + a[i-1][j]; 
+            for (j = 1; j <= i - 1; j++) {
+                a[i][j] = a[i - 1][j - 1] + a[i - 1][j];
             }
         }
         for (i = 0; i < n; i++) {

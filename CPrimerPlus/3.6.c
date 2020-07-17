@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main()
-{
+int main() {
     double water_num;
     scanf("%lf", &water_num);
     double water_molecule_weight = 3.0 * pow(10, -23);

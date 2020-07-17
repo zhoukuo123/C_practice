@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <float.h>
-int main()
-{
+
+int main() {
     printf("%d\n", FLT_DIG);
     printf("%d\n", DBL_DIG);
     double num = 1.0 / 3.0;

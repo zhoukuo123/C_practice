@@ -8,7 +8,7 @@ struct link {
 
 struct link *initlink() {
     struct link *head, *current, *next;
-    head = (struct link *)malloc(sizeof(char) * 10);
+    head = (struct link *) malloc(sizeof(char) * 10);
     if (!head) {
         printf("初始化失败\n");
         exit(0);
@@ -21,7 +21,7 @@ struct link *initlink() {
     printf("是否需要继续输入:(y/n)\n");
     scanf("%c", &x);
     while (x == 'y') {
-        next = (struct link*)malloc(sizeof(char) * 10);
+        next = (struct link *) malloc(sizeof(char) * 10);
         if (!next) {
             printf("初始化失败\n");
             exit(0);
@@ -47,8 +47,8 @@ void display(struct link *p) {
     }
     printf("%s\n", p->name);
 }
-int main()
-{
+
+int main() {
     struct link *p;
     p = initlink();
     display(p);
